@@ -13,6 +13,25 @@ ls -alh: me permite ver los archivos ocultos
 git init: inicializa el repositorio local
 git ignore: permite elegir que archivos no van a ser subidos a la nube
 vim .gitignore: permite crear con el editor de texto vim el archivo .gitignore
-esc+:wq: me permite guardar el archivo .gitignore y salir del editor en consola
+esc+:wq: me permite guardar el archivo .gitignore y salir del editor en consola vim
 git status: me dice el estado de mi repositorio, es decir que cambios no están comiteados
-git add -A: agrega todas las carpetas y archivos al staging area
+git add -A: agrega todas las carpetas y archivos al staging área
+git status: me permite también ver si los archivos están en el staging área.
+git rm --cached <nombre de archivo>: me permite eliminar un archivo que no quiero comitear
+git commit -m "commit inicial": me permite hacer commit con un mensaje asociado
+git log: lista de commits que se han hecho en el repositorio
+git remote add origin <url del repositorio remoto>: permite conectar el repositorio local al remoto
+git branch -M main: nos permite crear una rama de nombre main
+git push -u origin main: permite subir los cambios a la rama main
+git push -f origin main: sobreescribe lo que hay en GitHub con lo que tienes en local
+git clone: permite copiar un repositorio entero en donde no lo tengas
+git diff: permite ver los cambios que se han hecho en los archivos del working directory
+git pull: descarga al repositorio local desde el remoto los cambios que no estén en el local
+git branch nueva_feature: añade una rama nueva. Esto es para diversificar el trabajo sin afectar al main
+git checkout nueva_feature: nos permite cambiar de rama, para trabajar en otra rama y no afectar al main
+git branch -a: permite ver las ramas en local y en remoto
+git branch --merged: valida las ramas que han sido merged, o puestas en común.
+git merge nueva_feature: pone en común la rama nueva_feature con los que hay en el main, aunque no le hace ni commit al repositorio local ni push al remoto.
+git push origin --delete nueva_feature: elimina la rama del repositorio remoto, que no del local
+git branch -d nueva_feature: elimina la rama del repositorio local.
+Es importante no mantener muchas ramas activas si los cambios ya se han mergeado. No sirve para nada, solo ocupa espacio.
