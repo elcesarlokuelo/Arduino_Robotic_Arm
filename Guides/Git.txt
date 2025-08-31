@@ -1,0 +1,18 @@
+Guia de Git y comandos
+Git: sistema de control de versiones de archivos.
+En la carpeta donde queramos hacemos git bash here haciendo click derecho.
+
+Comandos:
+git versión: mirar versión instalada
+git config --global user.name: define mi usuario
+git config --global user.email: define mi correo electrónico
+git config --list: me permite ver los cambios en el repositorio
+ls: veo los archivos y carpetas
+ll: mas detalles de los archivos y carpetas
+ls -alh: me permite ver los archivos ocultos
+git init: inicializa el repositorio local
+git ignore: permite elegir que archivos no van a ser subidos a la nube
+vim .gitignore: permite crear con el editor de texto vim el archivo .gitignore
+esc+:wq: me permite guardar el archivo .gitignore y salir del editor en consola
+git status: me dice el estado de mi repositorio, es decir que cambios no están comiteados
+git add -A: agrega todas las carpetas y archivos al staging area
